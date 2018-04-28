@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Script for installing git and cloning the microglia repo
+
+sudo apt install git-all
+git clone https://github.com/kevslinger/Microglia.git
+Build
