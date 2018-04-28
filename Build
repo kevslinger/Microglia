@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#Install pip and for the pre-installed python.
+sudo apt install python-pip
+
+#Grab tensorflow's package-things from git
+git clone https://github.com/tensorflow/models.git
+
+#Install Tensorflow's dependencies from pip
+pip install tensorflow
+pip install pandas
+pip install pillow
+pip install matplotlib
+pip install cython
+
+cd models/research
+python setup.py build
+sudo python setup.py install
+
+cd
+cd Microglia/
+python generate_tfrecord.py --csv_input=glia_labels.csv --output_path=train.record
