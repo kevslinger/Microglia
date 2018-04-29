@@ -12,6 +12,7 @@ pip install pandas
 pip install pillow
 pip install matplotlib
 pip install cython
+pip install sklean
 
 cd models/research
 python setup.py build
