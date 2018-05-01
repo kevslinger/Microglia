@@ -5,6 +5,7 @@ sudo apt install python-pip
 
 #Grab tensorflow's package-things from git
 git clone https://github.com/tensorflow/models.git
+git clone https://github.com/tensorflow/models.git
 
 #Install Tensorflow's dependencies from pip
 pip install tensorflow
